@@ -14,7 +14,7 @@ ROOT_DIR = os.path.dirname(
     )
 )
 
-SECRET_KEY = '_b1=dehrxy9dp%8at%k=fhz=zb7o8t620r@nihvcvxtj4!1t1&'
+SECRET_KEY = os.getenv('DJANGO_SECRET_KEY')
 
 DATABASES = {
     'default': {
